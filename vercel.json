@@ -1,6 +1,13 @@
 {
-  "buildCommand": "npm run build-storybook",
+  "buildCommand": "mkdir -p public && npm run build-storybook",
   "outputDirectory": "storybook-static",
   "framework": "create-react-app",
-  "devCommand": "npm run storybook"
+  "devCommand": "npm run storybook",
+  "installCommand": "npm install",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/node"
+    }
+  ]
 } 
