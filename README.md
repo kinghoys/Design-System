@@ -1,46 +1,84 @@
-# Getting Started with Create React App
+# Design System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, React-based design system with reusable components, built with TypeScript and Storybook.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+The design system is live at: [https://design-system-q6lb5tsc1-y-hoysala-patels-projects.vercel.app](https://design-system-q6lb5tsc1-y-hoysala-patels-projects.vercel.app)
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+This design system includes the following components:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Button
+- Various sizes: small, medium, large
+- Types: primary, secondary
+- Custom colors
+- Click tracking functionality
+- Usage example: `<Button primary size="large" label="Primary Large" onClick={handleClick} />`
 
-### `npm test`
+### Header
+- Brand identity with logo
+- Authentication components (Login/Signup)
+- User greeting when logged in
+- Logout functionality
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Features
 
-### `npm run build`
+- **Individual Click Tracking**: Each button maintains its own click counter
+- **Authentication Flow**: Working login and signup functionality
+- **Responsive Design**: Components adapt to different screen sizes
+- **TypeScript Support**: Full type safety for all components
+- **Storybook Integration**: Component documentation and sandbox environment
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Running Storybook
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To view the components in isolation:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+npm run storybook
+```
 
-### `npm run eject`
+This will start Storybook on port 6006. Open [http://localhost:6006](http://localhost:6006) to view it in the browser.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Building the Design System
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+To build Storybook as a static site:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```
+npm run build-storybook
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Getting Started with Development
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+npm install
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### Running the App
+
+```
+npm start
+```
+
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+
+## Project Structure
+
+- `src/components/` - Reusable UI components
+- `src/stories/` - Storybook stories and example components
+- `src/theme/` - Design tokens and theme variables
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License.
