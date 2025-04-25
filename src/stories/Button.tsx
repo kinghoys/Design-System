@@ -21,14 +21,27 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
+  onClick,
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  
+  const handleClick = (event: React.MouseEvent<HTMLButtonElement>) => {
+    // Prevent default button behavior
+    event.preventDefault();
+    
+    // Call the onClick handler if provided
+    if (onClick) {
+      onClick();
+    }
+  };
+  
   return (
     <button
       type="button"
       className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
+      onClick={handleClick}
       {...props}
     >
       {label}
