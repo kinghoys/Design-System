@@ -6,7 +6,7 @@ A modern, React-based design system with reusable components, built with TypeScr
 
 The design system is live at: [https://design-system-q6lb5tsc1-y-hoysala-patels-projects.vercel.app](https://design-system-q6lb5tsc1-y-hoysala-patels-projects.vercel.app)
 
-Storybook is live at: [https://storybook-static-pt46kg60g-y-hoysala-patels-projects.vercel.app](https://storybook-static-pt46kg60g-y-hoysala-patels-projects.vercel.app)
+Storybook is live at: [https://kinghoys.github.io/storybook-static/](https://kinghoys.github.io/storybook-static/)
 
 ## Components
 
@@ -84,3 +84,21 @@ Runs the app in the development mode. Open [http://localhost:3000](http://localh
 ## License
 
 This project is licensed under the MIT License.
+
+# Design System Storybook
+
+This repository contains the static build of the Storybook for our Design System.
+
+## About
+
+This is a standalone repository containing just the Storybook build files, intended for easy deployment to platforms like GitHub Pages or Netlify.
+
+The main Design System repository can be found at: [https://github.com/kinghoys/Design-System](https://github.com/kinghoys/Design-System)
+
+## Viewing the Storybook
+
+The Storybook is a UI component explorer that allows you to browse and interact with the components of our design system in isolation.
+
+## How to Deploy
+
+This repository is set up for easy deployment to Netlify. Simply connect this repository to your Netlify account, and it will automatically be deployed.
